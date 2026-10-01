@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Happy Birthday Priya 🎂💖</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3,
+        #a18cd1,
+        #fbc2eb
+      );
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      width: 92%;
+      max-width: 650px;
+      padding: 35px 25px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+    }
+
+    .emoji {
+      font-size: 65px;
+      animation: bounce 1.8s infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      margin-bottom: 5px;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .name {
+      color: #fff700;
+      text-shadow:
+        0 0 10px #fff700,
+        0 0 25px #ffea00;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 22px;
+      padding: 25px 20px;
+      margin: 20px 0;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .heart {
+      color: #ff1744;
+      animation: heartbeat 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.3);
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      padding: 15px 28px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ff4081;
+      background: white;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+
+    /* Floating hearts */
+    .floating-heart {
+      position: fixed;
+      bottom: -30px;
+      font-size: 22px;
+      animation: floatUp linear forwards;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      top: -20px;
+      z-index: 999;
+      pointer-events: none;
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 28px 17px;
+        border-radius: 25px;
+      }
+
+      .emoji {
+        font-size: 52px;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+      }
+
+      .card {
+        padding: 20px 15px;
+        font-size: 0.95rem;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="emoji">🎂🎉</div>
+
+    <h1>
+      Happy Birthday
+      <span class="name">Priya</span>! 💖
+    </h1>
+
+    <p class="subtitle">
+      To my amazing best friend 🌸✨
+    </p>
+
+    <div class="card">
+      <p>
+        Dear <b>Priya</b> ❤️,
+      </p>
+
+      <br />
+
+      <p>
+        Happy Birthday to the most amazing person and
+        the best friend anyone could ask for! 🥹💖
+      </p>
+
+      <p>
+        Thank you for being there through all the
+        crazy moments, endless laughs, silly fights,
+        secrets and unforgettable memories. 🫶
+      </p>
+
+      <p>
+        I hope your special day is filled with
+        happiness, love, laughter and everything
+        your heart wishes for. ✨
+      </p>
+
+      <br />
+
+      <p>
+        Stay the same beautiful, crazy and wonderful
+        person you are! 🌷
+      </p>
+
+      <p>
+        Here's to many more memories together! 🥂🎊
+      </p>
+
+      <br />
+
+      <p style="font-size: 1.2rem;">
+        Love you loads, bestie
+        <span class="heart">❤️</span>
+      </p>
+    </div>
+
+    <button onclick="celebrate()">
+      🎉 Click for a Surprise 🎉
+    </button>
+
+    <div class="footer">
+      Made with ❤️ specially for Priya
+    </div>
+
+  </div>
+
+  <script>
+
+    // Confetti colors
+    const colors = [
+      "#ff1744",
+      "#ffeb3b",
+      "#00e5ff",
+      "#76ff03",
+      "#ff4081",
+      "#7c4dff",
+      "#ffffff"
+    ];
+
+    function createConfetti(amount = 120) {
+
+      for (let i = 0; i < amount; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.classList.add("confetti");
+
+        confetti.style.left = Math.random() * 100 + "vw";
+
+        confetti.style.backgroundColor =
+          colors[Math.floor(Math.random() * colors.length)];
+
+        confetti.style.width =
+          Math.random() * 8 + 5 + "px";
+
+        confetti.style.height =
+          Math.random() * 14 + 6 + "px";
+
+        confetti.style.borderRadius =
+          Math.random() > 0.5 ? "50%" : "2px";
+
+        confetti.style.animationDuration =
+          Math.random() * 3 + 2 + "s";
+
+        confetti.style.animationDelay =
+          Math.random() * 0.8 + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+          confetti.remove();
+        }, 6000);
+      }
+    }
+
+
+    // Floating hearts
+    function createHeart() {
+
+      const heart = document.createElement("div");
+
+      heart.classList.add("floating-heart");
+
+      const hearts = ["❤️", "💖", "💕", "💗", "💓", "💞"];
+
+      heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+      heart.style.left =
+        Math.random() * 100 + "vw";
+
+      heart.style.fontSize =
+        Math.random() * 20 + 15 + "px";
+
+      heart.style.animationDuration =
+        Math.random() * 5 + 5 + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 10000);
+    }
+
+
+    // Surprise button
+    function celebrate() {
+
+      createConfetti(200);
+
+      alert(
+        "🎉 HAPPY BIRTHDAY PRIYA! 🎂💖\n\n" +
+        "You are not just my best friend,\n" +
+        "you are one of the most special people in my life! 🫶\n\n" +
+        "Stay happy, keep smiling and keep shining! ✨❤️"
+      );
+    }
+
+
+    // Start confetti automatically
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        createConfetti(150);
+      }, 500);
+    });
+
+
+    // Keep floating hearts appearing
+    setInterval(createHeart, 900);
+
+  </script>
+
+</body>
+</html>
